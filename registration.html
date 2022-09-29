@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Registration Form </title>
+     <link rel="stylesheet" type="text/css" href="style.css">
+     <link rel="icon" href="slack-logo.ico">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!--- To adding show password toogle <script>
+    function myFunction() {
+  var x = document.getElementById("Pass1");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+    </script>---->
+    <style>
+      .container{
+        background-color: rgba(0, 0, 0, 0.247);
+        color: white;
+      }
+    </style>
+   </head>
+<body id="registration">
+  <div class="container">
+    <div class="title">Registration</div>
+    <div class="content">
+      <form action="insert.php" method="post">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">First_Name</span>
+            <input type="text" placeholder="Enter your FirstName" name="First_Name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Last_name</span>
+            <input type="text" placeholder="Enter your LastName" name="Last_name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter your email" name="Email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone_Number</span>
+            <input type="text" placeholder="Enter your number" name="Phone_Number" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="Password" placeholder="Enter your password" name="Password" required id="Pass1">
+          </div>
+          <div class="input-box">
+            <span class="details">Confirm_Password</span>
+            <input type="Password" placeholder="Confirm your password" name="Confirm_Password" required id="Pass2">
+            <h5 style="font-weight:normal; color: #e41400; margin-top: 5px; text-align: right; "></h5>
+          </div>
+          <script src="script.js"></script>
+        </div>
+        <div class="gender-details">
+          <input type="radio" name="Gen"  id="dot-1"  value="Male">
+          <input type="radio" name="Gen" id="dot-2"  value="Female">
+          <input type="radio" name="Gen" id="dot-3" value="Prefer not to say">
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Female</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Prefer not to say</span>
+            </label>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" name="save" value="Register">
+        </div>
+      </form>
+    </div>
+  </div>
+
+  
+
+</body>
+</html>
+ 
